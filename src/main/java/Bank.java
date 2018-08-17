@@ -2,6 +2,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+//note - a more detailed project was built in bank-teller2
+
 public class Bank {
 	
 	Map<String, BankAccount> accounts = new HashMap<>();
@@ -16,8 +18,7 @@ public class Bank {
 	}
 
 	public Collection<BankAccount> getAllAccounts() {
-		// TODO Auto-generated method stub
-		return null;
+		return accounts.values();
 	}
 
 }

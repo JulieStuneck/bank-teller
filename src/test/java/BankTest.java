@@ -1,5 +1,5 @@
 import static org.hamcrest.CoreMatchers.is;
-
+import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
 
 import java.util.Collection;
@@ -32,6 +32,6 @@ public class BankTest {
 		underTest.add(account1);
 		underTest.add(account2);
 		Collection<BankAccount> allAccounts = underTest.getAllAccounts();
-		asserThat(allAccounts, contains(account1,account2));
+		assertThat(allAccounts, contains(account1,account2));
 	}
 }
